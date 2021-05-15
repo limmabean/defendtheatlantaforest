@@ -17,17 +17,17 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout >
     <Seo title="Home" />
-    <div style={{
-      position: "absolute",
-      backgroundColor: "white",
-      width: "100%",
-      height: "241%",
-      zIndex: "-1",
-      left: "0",
-      top: "0",
-      opacity: "80%"
-    }}></div>
-    <h1>no cop city. no hollywood dystopia.</h1>
+    <div className="center" style={{
+      background: "#A7D3A8",
+      textAlign: "center"
+    }}>
+      <a href="https://actionnetwork.org/fundraising/defend-the-atlanta-forest?source=direct_link&" style={{
+        fontSize: "18pt"
+      }}>Donate to Defend the Forest</a>
+    </div>
+    <h1 style={{
+      paddingTop: "20px"
+    }}>no cop city. no hollywood dystopia.</h1>
     <p>
     Atlanta is a city in a forest. We have the highest percentage of tree canopy of any major metropolitan area in America. Our canopy is the main factor in ensuring Atlanta’s resiliency in the face of climate change. The forest in Southeast Atlanta is home to wetlands that filter rainwater and prevent flooding. It is also one of the last breeding grounds for many amphibians in the region, as well as an important migration site for wading birds.
 </p><p>
