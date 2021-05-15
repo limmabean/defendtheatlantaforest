@@ -17,18 +17,19 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout >
     <Seo title="Home" />
+    <h1>no cop city. no hollywood dystopia.</h1>
     <div className="center" style={{
       background: "#A7D3A8",
       textAlign: "center"
     }}>
       <a href="https://actionnetwork.org/fundraising/defend-the-atlanta-forest?source=direct_link&" style={{
-        fontSize: "18pt"
+        fontSize: "18pt",
+        color: "white"
       }}>Donate to Defend the Forest</a>
     </div>
-    <h1 style={{
+    <p style={{
       paddingTop: "20px"
-    }}>no cop city. no hollywood dystopia.</h1>
-    <p>
+    }}>
     Atlanta is a city in a forest. We have the highest percentage of tree canopy of any major metropolitan area in America. Our canopy is the main factor in ensuring Atlanta’s resiliency in the face of climate change. The forest in Southeast Atlanta is home to wetlands that filter rainwater and prevent flooding. It is also one of the last breeding grounds for many amphibians in the region, as well as an important migration site for wading birds.
 </p><p>
 The history of this particular land is deeply scarred. In the 1800s shortly after the land was stolen from Muscogee Creek peoples, it was used as a plantation. In the early 1900s, a prison farm was opened where inmates were forced to perform unpaid agricultural labor,  marking the rebranding of slavery into for profit prison labor. The Atlanta Police Department currently uses this hallowed ground as a firing range.

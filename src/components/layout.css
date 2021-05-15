@@ -56,12 +56,12 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: white;
+  color: green;
 }
 a:active,
 a:hover {
   outline-width: 0;
-  color: white;
+  color: green;
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
