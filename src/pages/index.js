@@ -22,7 +22,7 @@ const IndexPage = () => (
       background: "#A7D3A8",
       textAlign: "center"
     }}>
-      <a href="https://actionnetwork.org/fundraising/defend-the-atlanta-forest?source=direct_link&" style={{
+      <a href="https://actionnetwork.org/fundraising/forest-justice-defense-fund" style={{
         fontSize: "18pt",
         color: "white"
       }}>Donate to Defend the Forest</a>
