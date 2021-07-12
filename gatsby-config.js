@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Defend the Atlanta Forest`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `The Atlanta Police Department seeks to turn 300 acres of forest into a tactical training compound featuring a mock city. Blackhall wants to clear cut 170 acres of forest to develop into an airport and erect the largest sound stage in America. We refuse to let our forest be bulldozed in favor of the police and sold out to Hollywood.`,
     author: `Defend the Forest Atlanta`,
   },
   plugins: [

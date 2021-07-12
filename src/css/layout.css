@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #2d850e;
+}
+
+header {
+    background: var(--primary-color);
+}
+
+.header__title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header__title a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2.5% 2em;
+    background-color: white;
+}
+
+body {
+    font-family: arimo;
+    margin: 0;
+}
+
+.body__motto {
+    text-align: center;
+    color: black;
+}
+
+footer {
+    padding: 1em 2em;
+    background-color: white;
+    letter-spacing: normal;
+}
+
+h1 {
+    font-family: Shrikhand;
+    letter-spacing: normal;
+}
+
+h3 {
+    letter-spacing: normal;
+    color: black;
+}
+
+ul {
+    color: black;
+}
+
+p {
+    font-size: 20px;
+    color: black;
+}
+
+a.link {
+    color: var(--primary-color);
+}
+
+.button__icon {
+    margin-right: 8px;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.button-primary[disabled]:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.button-wide {
+    width: 100%;
+}
+
+.button-primary-outline {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.button-large {
+    font-size: 2rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding: 0 2rem;
+}
+
+/* Section deciding responsiveness. Milligram is a mobile first css library. This means that the mobile CSS is set as
+default and CSS for larger screens is set under media queries. */
+.column.column-side {
+    max-width: 0%;
+}
+.column.column-main {
+    max-width: 100%
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+    .column.column-side {
+        max-width: 10%;
+    }
+    .column.column-main {
+        max-width: 80%
+    }
+    .header__title {
+        text-align: left;
+    }
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+    .column.column-side {
+        max-width: 20%;
+    }
+    .column.column-main {
+        max-width: 60%
+    }
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {
+    .column.column-side {
+        max-width: 30%;
+    }
+    .column.column-main {
+        max-width: 40%
+    }
+}

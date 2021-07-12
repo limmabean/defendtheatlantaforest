@@ -8,9 +8,11 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import BackgroundImage from 'gatsby-background-image';
 
+import 'milligram/dist/milligram.min.css';
 import Header from "./header"
-import "./layout.css"
+import "../css/layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,28 +22,44 @@ const Layout = ({ children }) => {
           title
         }
       }
+      desktop: file(relativePath: { eq: "forest.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
     }
   `)
 
+  const imageData = data.desktop.childImageSharp.fluid;
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+      <BackgroundImage
+        Tag="section"
+        className={"bg-image"}
+        fluid={imageData}
+        backgroundColor={"#ffffff"}
       >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Defend the Atlanta Forest
-        </footer>
-      </div>
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <div className={"row"}>
+          <div className={"column column-side"}></div>
+          <div className={"column column-main"}>
+              <main>{children}</main>
+          </div>
+          <div className={"column column-side"}></div>
+        </div>
+        <div className={"row"}>
+          <div className={"column column-side"}></div>
+          <div className={"column column-main"}>
+          <footer>
+            © 2021 Defend the Atlanta Forest
+          </footer>
+          </div>
+          <div className={"column column-side"}></div>
+        </div>
+      </BackgroundImage>
     </>
   )
 }
