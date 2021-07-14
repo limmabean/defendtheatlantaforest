@@ -85,10 +85,7 @@ a.link {
 }
 
 .button-large {
-    font-size: 2rem;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    padding: 0 2rem;
+
 }
 
 /* Section deciding responsiveness. Milligram is a mobile first css library. This means that the mobile CSS is set as
@@ -110,6 +107,12 @@ default and CSS for larger screens is set under media queries. */
     }
     .header__title {
         text-align: left;
+    }
+    .button-large {
+        font-size: 2rem;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        padding: 0 2rem;
     }
 }
 
